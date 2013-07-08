@@ -1,7 +1,5 @@
 class Student
 
-  attr_accessor :name, :gpa
-
   def set_name(student_name)
     @name = student_name
   end
