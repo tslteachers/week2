@@ -8,13 +8,39 @@ student_2 = Student.new
 student_2.name = "Bob"
 student_2.gpa = "2.4"
 
-puts "Name: #{student_1.name}"
-puts "GPA: #{student_1.gpa}"
-puts "-" * 20
+student_3 = Student.new
+student_3.name = "Harry"
+student_3.gpa = "3.1"
 
 
-puts "Name: #{student_2.name}"
-puts "GPA: #{student_2.gpa}"
-puts "-" * 20
+
+
+puts(student_3.gpa)
+
+def add(x, y)
+  return x + y
+end
+
+puts add(1, 4)
+
+
+def display_student(the_student)
+  puts "Name: #{the_student.name}"
+  puts "GPA: #{the_student.gpa}"
+  puts "-" * 20
+end
+
+[student_1, student_2, student_3].each do |student|
+  display_student(student)
+end
+
+# display_student(student_1)
+# display_student(student_2)
+# display_student(student_3)
+
+
+
+
+
 
 

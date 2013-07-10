@@ -1,18 +1,27 @@
 class Student
-
-  def set_name(student_name)
-    @name = student_name
-  end
-
-  def get_name
-    return @name
-  end
-
-  def set_gpa(student_gpa)
-    @gpa = student_gpa
-  end
-
-  def get_gpa
-    return @gpa
-  end
+  attr_accessor "name"
+  attr_accessor "gpa"
 end
+
+# class Student
+
+#   def to_s
+#     return "#{get_name} has a GPA of #{get_gpa}"
+#   end
+
+#   def name=(student_name)
+#     @name = student_name
+#   end
+
+#   def name
+#     return @name
+#   end
+
+#   def gpa=(student_gpa)
+#     @gpa = student_gpa
+#   end
+
+#   def gpa
+#     return @gpa
+#   end
+# end
